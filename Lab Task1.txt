@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>University Admission Form</title>
+</head>
+<body>
+
+    <h1>University Admission Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" maxlength="50" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="technology" name="interests" value="Technology">
+            <label for="technology">Technology</label>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Academic Information Section -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="highschool">High School Name:</label><br>
+            <input type="text" id="highschool" name="highschool" maxlength="100" required><br><br>
+
+            <label for="gpa">GPA / Percentage:</label><br>
+            <input type="text" id="gpa" name="gpa" maxlength="5" required><br><br>
+
+            <label for="department">Preferred Department:</label><br>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Arts">Arts</option>
+                <option value="Medicine">Medicine</option>
+            </select>
+            <br><br>
+
+            <label for="documents">Upload Transcript / Resume:</label><br>
+            <input type="file" id="documents" name="documents" required><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
